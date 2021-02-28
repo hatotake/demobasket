@@ -1,0 +1,320 @@
+
+/* header */
+
+/* left */
+header {
+  height: 62px;
+  position: fixed;
+  z-index: 5;
+}
+
+.hd-div1 {
+  position: absolute;
+}
+
+.hd-p1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 1px;
+  color: #ffffff;
+}
+
+.hd-img1 {
+  width: 90px;
+}
+
+/* right */
+.hd-div2 {
+  position: absolute;
+  right: 0;
+  width: 77px;
+  height: 20px;
+}
+
+.hd-div2:hover {
+  cursor: pointer;
+}
+
+.hd-div2 a {
+  text-decoration: none;
+}
+
+.hd-img2 {
+  width: 20px;
+}
+
+
+.hd-btn1 {
+  position: absolute;
+  right: 0;
+  font-size: 13px;
+  background-color: rgb(43, 46, 248);
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.hd-btn1:hover {
+  background:rgba(95, 69, 247, 0.815);
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .hd-p1 {
+    margin-bottom: 30px;
+  }
+
+  .hd-img1 {
+    width: 130px;
+  }
+
+  header {
+    height: 70px;
+  }
+}
+
+/* main */
+
+main {
+  z-index: 3;
+}
+
+.row1 {
+  height: 700px;
+  position: relative;
+  animation-name: row1;
+  animation-duration: 3s;
+}
+
+@keyframes row1 {
+  0% {
+    opacity: 0.1;
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.col1 {
+  opacity: 0.7;
+  height: 100%;
+  background-image: url("AdobeStock_109797209.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* display: table; */
+}
+
+.moji {
+  position: absolute;
+  top: 200px;
+  right: 60px;
+}
+
+.ma-p1 {
+  font-size: 27px;
+  font-weight: bold;
+  color: aliceblue;
+  line-height: 50px;
+}
+
+
+
+/* row2 */
+
+.row2 {
+  height: 200px;
+  margin-bottom: 500px;
+}
+
+
+.i {
+  height: 100px;
+  padding: 30px;
+  padding-top: 100px;
+}
+
+.icon {
+  font-size: 11px;
+}
+
+.tw {
+  background: rgba(177, 179, 180, 0.527);
+  border-radius: 3px;
+  padding-bottom: 5px;
+}
+
+.iine {
+  background: rgba(177, 179, 180, 0.527);
+  border-radius: 3px;
+  padding-bottom: 5px;
+}
+
+
+/* row3 */
+
+.row3 {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img {
+  display: none;
+  position: absolute;
+  top: -200px;
+  width: 500px;
+  height: 400px;
+  z-index: 10;
+  border-radius: 50px;
+}
+.img2 {
+  display: none;
+  opacity: 0.5;
+  left: 0;
+  width: 100%;
+}
+
+
+
+footer {
+  background: whitesmoke;
+  text-align: center;
+  padding-top: 30px;
+}
+
+footer p {
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+footer span {
+  color: rgb(19, 136, 245);
+}
+
+.aa {
+  z-index: 10;
+  text-align: right; 
+  position:fixed;
+  bottom:0;
+}
+
+.btn4 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: whitesmoke;
+}
+
+.btn4:hover {
+  opacity: 1;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .ma-p1 {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+ 
+
+}
+
+/* 縦並びDropdown */
+
+#category {
+  margin: 0 auto;
+  background: rgba(255, 126, 66, 0.089);
+  font-size: 15px;
+	font-weight: bold;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+
+.main_menu{
+  padding-bottom: 10px;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.main_menu:hover {
+  cursor: pointer;
+}
+.main_menu span:hover {
+  border-bottom: black solid 1px;
+}
+.main_menu::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: solid 4px #070707;
+    border-right: solid 4px #000000;
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -10px;
+}
+#menu .open::before {
+    -ms-transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+    margin-top: -5px;
+}
+
+.sub_menu p{
+  color: rgb(87, 86, 86);
+	padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.main_menu img {
+  width: 8%;
+  padding-right: 10px;
+}
+
+.sub-p1 {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 500px) {
+  .row2-p2 {
+   width:95%;
+  }
+
+  .row3-p2 {
+    font-size: 16px;
+  }
+
+}
